@@ -210,8 +210,8 @@ return [
                         'hyperf/constants',
                     ],
                     'resources' => [
-                        'resources/constants/ErrorCode.php' => 'app/Constants/ErrorCode.php',
-                        'resources/constants/BusinessException.php' => 'app/Exception/BusinessException.php',
+//                        'resources/constants/ErrorCode.php' => 'app/Constants/ErrorCode.php',
+//                        'resources/constants/BusinessException.php' => 'app/Exception/BusinessException.php',
                     ],
                 ],
             ],
@@ -230,8 +230,8 @@ return [
                     ],
                     'resources' => [
                         'resources/async_queue/async_queue.php' => 'config/autoload/async_queue.php',
-                        'resources/async_queue/AsyncQueueConsumer.php' => 'app/Process/AsyncQueueConsumer.php',
-                        'resources/async_queue/QueueHandleListener.php' => 'app/Listener/QueueHandleListener.php',
+//                        'resources/async_queue/AsyncQueueConsumer.php' => 'app/Process/AsyncQueueConsumer.php',
+//                        'resources/async_queue/QueueHandleListener.php' => 'app/Listener/QueueHandleListener.php',
                         'resources/database/redis.php' => 'config/autoload/redis.php',
                     ],
                 ],
@@ -268,7 +268,7 @@ return [
                         'hyperf/model-cache',
                     ],
                     'resources' => [
-                        'resources/model_cache/Model.php' => 'app/Model/Model.php',
+//                        'resources/model_cache/Model.php' => 'app/Model/Model.php',
                         'resources/model_cache/databases.php' => 'config/autoload/databases.php',
                         'resources/database/redis.php' => 'config/autoload/redis.php',
                     ],

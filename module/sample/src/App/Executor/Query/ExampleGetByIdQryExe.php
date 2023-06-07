@@ -20,7 +20,11 @@ class ExampleGetByIdQryExe extends AbstractExecutor
 
     public function execute(int $id): ExampleVO
     {
-        $result = $this->exampleQryRepo->getById($id);
-        return ExampleVO::ofDO($result);
+//        // 需要数据库连接 todo
+//        $result = $this->exampleQryRepo->getById($id);
+//        $result = \Hyperf\Support\make(ExampleVO::class);
+//        return ExampleVO::ofDO($result);
+
+        return \Hyperf\Support\make(ExampleVO::class);
     }
 }

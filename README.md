@@ -25,4 +25,6 @@ $ cd path/to/install
 $ php bin/hyperf.php start
 ```
 
-服务默认监听 `9501` 端口，打开浏览器，访问`127.0.0.1:9501`，访问项目首页
+服务默认监听 `9501` 端口，打开浏览器，访问`127.0.0.1:9501`，访问项目首页；
+
+测试`maliboot`示例，如`http://127.0.0.1:9501/admin/example/listByPage`

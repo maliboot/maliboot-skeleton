@@ -21,6 +21,9 @@ class ExampleListByPageQryExe extends AbstractExecutor
 
     public function execute(ExampleListByPageQry $exampleListByPageQry): PageVO
     {
-        return $this->exampleQryRepo->listByPage($exampleListByPageQry);
+//        // 需要数据库连接 todo
+//        return $this->exampleQryRepo->listByPage($exampleListByPageQry);
+
+        return \Hyperf\Support\make(PageVO::class);
     }
 }

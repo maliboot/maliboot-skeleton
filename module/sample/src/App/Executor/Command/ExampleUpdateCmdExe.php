@@ -22,8 +22,11 @@ class ExampleUpdateCmdExe extends AbstractExecutor
 
     public function execute(ExampleUpdateCmd $exampleUpdateCmd): EmptyVO
     {
+        return \Hyperf\Support\make(EmptyVO::class);
+
+        // 需要数据库连接 todo
         $params = Example::of($exampleUpdateCmd->toArray());
         $this->exampleRepo->update($params);
-        return make(EmptyVO::class);
+        return \Hyperf\Support\make(EmptyVO::class);
     }
 }

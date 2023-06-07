@@ -20,7 +20,10 @@ class ExampleDeleteCmdExe extends AbstractExecutor
 
     public function execute(int $id): EmptyVO
     {
+        return \Hyperf\Support\make(EmptyVO::class);
+
+        // 需要数据库连接 todo
         $this->exampleRepo->delete($id);
-        return make(EmptyVO::class);
+        return \Hyperf\Support\make(EmptyVO::class);
     }
 }

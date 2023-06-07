@@ -1,5 +1,5 @@
 {
-    "name": "hyperf/hyperf-skeleton",
+    "name": "maliboot/maliboot-skeleton",
     "type": "project",
     "keywords": [
         "php",
@@ -7,9 +7,12 @@
         "framework",
         "hyperf",
         "microservice",
-        "middleware"
+        "middleware",
+        "skeleton",
+        "maliboot-skeleton",
+        "maliboot"
     ],
-    "description": "A coroutine framework that focuses on hyperspeed and flexible, specifically use for build microservices and middlewares.",
+    "description": "基于hyperf-skeleton，适配maliboot需求而构建的项目骨架",
     "license": "Apache-2.0",
     "require": {
         "php": ">=8.0",
@@ -22,7 +25,27 @@
         "hyperf/http-server": "~3.0.0",
         "hyperf/logger": "~3.0.0",
         "hyperf/memory": "~3.0.0",
-        "hyperf/process": "~3.0.0"
+        "hyperf/process": "~3.0.0",
+        "maliboot/api-annotation": "*",
+        "maliboot/auth": "*",
+        "maliboot/cola": "*",
+        "maliboot/contract": "*",
+        "maliboot/database": "*",
+        "maliboot/di": "*",
+        "maliboot/dto": "*",
+        "maliboot/error-code": "*",
+        "maliboot/exception-handler": "*",
+        "maliboot/field-collector": "*",
+        "maliboot/hashing": "*",
+        "maliboot/plugin": "*",
+        "maliboot/plugin-code-generator": "*",
+        "maliboot/plugin-config": "*",
+        "maliboot/request": "*",
+        "maliboot/response": "*",
+        "maliboot/response-wrapper": "*",
+        "maliboot/swagger": "*",
+        "maliboot/utils": "*",
+        "maliboot/validation": "*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",

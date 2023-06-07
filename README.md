@@ -1,43 +1,28 @@
-# Introduction
+# 简介
+ 这是一个使用`maliboot`的项目骨架。此项目基于[`hyperf/hyperf-skeleton`](https://github.com/hyperf/hyperf-skeleton)，并
+ 适配`maliboot`的需求构建而成。
 
-This is a skeleton application using the Hyperf framework. This application is meant to be used as a starting place for those looking to get their feet wet with Hyperf Framework.
-
-# Requirements
-
-Hyperf has some requirements for the system environment, it can only run under Linux and Mac environment, but due to the development of Docker virtualization technology, Docker for Windows can also be used as the running environment under Windows.
-
-The various versions of Dockerfile have been prepared for you in the [hyperf/hyperf-docker](https://github.com/hyperf/hyperf-docker) project, or directly based on the already built [hyperf/hyperf](https://hub.docker.com/r/hyperf/hyperf) Image to run.
-
-When you don't want to use Docker as the basis for your running environment, you need to make sure that your operating environment meets the following requirements:  
-
+# 安装依赖
  - PHP >= 8.0
- - Any of the following network engines
-   - Swoole PHP extension >= 4.5，with `swoole.use_shortname` set to `Off` in your `php.ini`
-   - Swow PHP extension (Beta)
+ - 框架引擎，两者选其一
+   - Swoole PHP extension >= 4.5，在`php.ini`设置`swoole.use_shortname=Off`
+   - Swow PHP extension (可二进制打包项目)
  - JSON PHP extension
  - Pcntl PHP extension
- - OpenSSL PHP extension （If you need to use the HTTPS）
- - PDO PHP extension （If you need to use the MySQL Client）
- - Redis PHP extension （If you need to use the Redis Client）
- - Protobuf PHP extension （If you need to use the gRPC Server or Client）
+ - OpenSSL PHP extension （HTTPS必须）
+ - PDO PHP extension （Mysql客户端必须）
+ - Redis PHP extension （Redis客户端必须）
+ - Protobuf PHP extension （GRPC必须）
 
-# Installation using Composer
-
-The easiest way to create a new Hyperf project is to use [Composer](https://getcomposer.org/). If you don't have it already installed, then please install as per [the documentation](https://getcomposer.org/download/).
-
-To create your new Hyperf project:
-
+# 安装项目骨架
 ```bash
-$ composer create-project hyperf/hyperf-skeleton path/to/install
+$ composer create-project maliboot/maliboot-skeleton path/to/install
 ```
-
-Once installed, you can run the server immediately using the command below.
+安装完后，运行项目
 
 ```bash
 $ cd path/to/install
 $ php bin/hyperf.php start
 ```
 
-This will start the cli-server on port `9501`, and bind it to all network interfaces. You can then visit the site at `http://localhost:9501/`
-
-which will bring up Hyperf default home page.
+服务默认监听 `9501` 端口，打开浏览器，访问`127.0.0.1:9501`，访问项目首页

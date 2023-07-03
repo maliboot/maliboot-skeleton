@@ -12,7 +12,8 @@ declare(strict_types=1);
 return [
     'handler' => [
         'http' => [
-            Hyperf\HttpServer\Exception\Handler\HttpExceptionHandler::class,
+            \MaliBoot\Validation\Exception\Handler\ValidationExceptionHandler::class,
+            \MaliBoot\ExceptionHandler\Handler\ThrowableExceptionHandler::class,
         ],
     ],
 ];

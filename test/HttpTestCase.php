@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-namespace HyperfTest;
+namespace MalibootTest;
 
 use Hyperf\Testing\Client;
 use PHPUnit\Framework\TestCase;

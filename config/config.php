@@ -17,6 +17,7 @@ use function Hyperf\Support\env;
 return [
     'app_name' => env('APP_NAME', 'skeleton'),
     'app_env' => env('APP_ENV', 'dev'),
+    'app_debug' => env('APP_DEBUG', false),
     'scan_cacheable' => env('SCAN_CACHEABLE', false),
     'debug' => [
         'hyperf' => env('DEBUG_HYPERF', false),
@@ -33,4 +34,7 @@ return [
             LogLevel::WARNING,
         ],
     ],
+    'debug' => [
+        'hyperf' => env('DEBUG_HYPERF', false),
+    ]
 ];

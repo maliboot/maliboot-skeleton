@@ -47,6 +47,8 @@
         "maliboot/swagger": "*",
         "maliboot/utils": "*",
         "maliboot/validation": "*",
+        "maliboot/framework": "*",
+        "maliboot/event": "*",
         "module/sample": "*"
     },
     "require-dev": {

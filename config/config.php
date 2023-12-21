@@ -19,9 +19,6 @@ return [
     'app_env' => env('APP_ENV', 'dev'),
     'app_debug' => env('APP_DEBUG', false),
     'scan_cacheable' => env('SCAN_CACHEABLE', false),
-    'debug' => [
-        'hyperf' => env('DEBUG_HYPERF', false),
-    ],
     StdoutLoggerInterface::class => [
         'log_level' => [
             LogLevel::ALERT,

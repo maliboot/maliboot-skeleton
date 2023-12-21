@@ -47,6 +47,5 @@ return [
         Event::ON_WORKER_START => [MaliBoot\Framework\Bootstrap\WorkerStartCallback::class, 'onWorkerStart'],
         Event::ON_PIPE_MESSAGE => [Hyperf\Framework\Bootstrap\PipeMessageCallback::class, 'onPipeMessage'],
         Event::ON_WORKER_EXIT => [Hyperf\Framework\Bootstrap\WorkerExitCallback::class, 'onWorkerExit'],
-        Event::ON_BEFORE_START => [MaliBoot\Framework\Bootstrap\ServerStartCallback::class, 'beforeStart']
     ],
 ];
